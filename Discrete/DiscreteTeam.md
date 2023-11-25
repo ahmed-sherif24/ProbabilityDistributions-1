@@ -6,7 +6,7 @@ Geometric :
 
 Uniform   : 
 
-Poisson   : 
+Poisson   : Yasmin
 
 ------------------------------------------
 
