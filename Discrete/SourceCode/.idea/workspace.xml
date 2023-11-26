@@ -5,28 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b6e812-f2db-4c78-b104-3688fe4f60a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Continuous/SourceCode/ExampleFour.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Continuous/SourceCode/ExampleThree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Continuous/SourceCode/Exponential.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Continuous/SourceCode/Gaussian.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Continuous/SourceCode/Uniform.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Discrete.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bernoulli.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExampleOne.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExampleTwo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Geometric.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Poisson.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Uniform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bernoulli.py" beforeDir="false" afterPath="$PROJECT_DIR$/Bernoulli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Plot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +17,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2YgeBsTBneW4Er1NGDhalo27giA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,6 +35,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "python.debugger.dataview.autoresize": "false",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -66,6 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700951518431</updated>
       <workItem from="1700951520375" duration="834000" />
+      <workItem from="1700978206230" duration="2566000" />
     </task>
     <servers />
   </component>
@@ -73,7 +56,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SourceCode$Plot.coverage" NAME="Plot Coverage Results" MODIFIED="1700977309425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SourceCode$Poisson.coverage" NAME="Poisson Coverage Results" MODIFIED="1700977330327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SourceCode$ExampleOne.coverage" NAME="ExampleOne Coverage Results" MODIFIED="1700978764478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SourceCode$Plot.coverage" NAME="Plot Coverage Results" MODIFIED="1700979890985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SourceCode$Bernoulli.coverage" NAME="Bernoulli Coverage Results" MODIFIED="1700980727024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SourceCode$Poisson.coverage" NAME="Poisson Coverage Results" MODIFIED="1700980772396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

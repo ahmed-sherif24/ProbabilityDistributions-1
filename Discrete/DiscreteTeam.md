@@ -1,4 +1,4 @@
-Bernoulli : 
+Bernoulli : Sherif M.Samy
 
 Binomial  : 
 
@@ -6,7 +6,7 @@ Geometric :
 
 Uniform   : Ahmed Sherif
 
-Poisson   : Yasmin Yehya
+Poisson   : Yasmin Yehya (Reviewed)
 
 ------------------------------------------
 
