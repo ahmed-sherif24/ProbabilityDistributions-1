@@ -1,6 +1,6 @@
 import numpy as np
 import scipy.stats as stats
-from Plot import plotting
+from plot import plotting
 
 p = 0.3
 rv = stats.bernoulli(p)

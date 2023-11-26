@@ -1,6 +1,6 @@
 import numpy as np
 from scipy.stats import poisson
-from Plot import plotting
+from plot import plotting
 
 k = np.arange(0, 16)
 print(k)
