@@ -4,7 +4,7 @@ Binomial  :
 
 Geometric : 
 
-Uniform   : 
+Uniform   : Ahmedsherif 
 
 Poisson   : Yasmin
 
