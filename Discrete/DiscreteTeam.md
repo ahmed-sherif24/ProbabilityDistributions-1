@@ -4,9 +4,9 @@ Binomial  :
 
 Geometric : 
 
-Uniform   : 
+Uniform   : Ahmed Sherif
 
-Poisson   : Yasmin
+Poisson   : Yasmin Yehya
 
 ------------------------------------------
 
