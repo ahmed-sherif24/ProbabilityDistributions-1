@@ -1,8 +1,8 @@
 Bernoulli : Sherif M.Samy
 
-Binomial  : 
+Binomial  : Raghad Amr
 
-Geometric : 
+Geometric : Ahmed Raafat
 
 Uniform   : Ahmed Sherif
 
