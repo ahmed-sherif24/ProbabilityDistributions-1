@@ -1,6 +1,6 @@
 Uniform     : 
 
-Exponential : 
+Exponential : Mahmoud Mansour  
 
 Gaussian    : 
 
