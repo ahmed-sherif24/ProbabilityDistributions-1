@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.stats import binom
 
 n = int(input("Enter the number of trials (n): "))
 p = float(input("Enter the probability of success (p): "))
