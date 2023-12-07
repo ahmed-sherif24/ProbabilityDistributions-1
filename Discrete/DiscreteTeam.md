@@ -1,8 +1,8 @@
-Bernoulli : Sherif M.Samy
+Bernoulli : Ahmed Eslam
 
 Binomial  : Raghad Amr
 
-Geometric : Ahmed Raafat
+Geometric : Ahmed Eslam
 
 Poisson   : Yasmin Yehya
 

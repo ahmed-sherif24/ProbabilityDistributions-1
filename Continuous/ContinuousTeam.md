@@ -1,11 +1,11 @@
-Uniform     : 
+Uniform     : Ahmed Raafat
 
-Exponential : Mahmoud Mansour  
+Exponential : Mahmoud Mansour
 
-Gaussian    : 
+Gaussian    : Sherif Mostafa
 
 ------------------------------------------
 
-Example 3   : 
+Example 3   : Mahmoud Mansour
 
-Example 4   : 
+Example 4   : Sherif Mostafa
