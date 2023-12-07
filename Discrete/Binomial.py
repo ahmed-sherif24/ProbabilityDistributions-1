@@ -1,18 +1,21 @@
 import numpy as np
-from scipy.stats import binom
+import matplotlib.pyplot as plt
 
-n = int(input("Enter the number of trials (n): "))
-p = float(input("Enter the probability of success (p): "))
+n = 6
+p = 0.6
+r_values = np.arange(n + 1)
 
-random_variable = np.random.binomial(n, p)
+dist = np.binom(n, p).pmf(r_values)
 
-pmf = np.random.binomial(n, p, size=n+1) / float(n+1)
+print("r\tp(r)")
+for r, prob in zip(r_values, dist):
+    print(f"{r}\t{prob}")
 
-mean = np.mean(pmf)
+mean = n * p
+variance = n * p * (1 - p)
 
-variance = np.var(pmf)
+print(f"mean = {mean}")
+print(f"variance = {variance}")
 
-print("Random Variable:", random_variable)
-print("PMF:", pmf)
-print("Mean:", mean)
-print("Variance:", variance)
+plt.bar(r_values, dist)
+plt.show()
