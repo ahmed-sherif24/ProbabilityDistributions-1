@@ -4,12 +4,10 @@ Binomial  : Raghad Amr
 
 Geometric : Ahmed Raafat
 
-Uniform   : Ahmed Sherif
-
-Poisson   : Yasmin Yehya (Reviewed)
+Poisson   : Yasmin Yehya
 
 ------------------------------------------
 
-Example 1   : 
+Example 1   : Mariam Abdellatif
 
-Example 2   : 
+Example 2   : Ahmed Sherif

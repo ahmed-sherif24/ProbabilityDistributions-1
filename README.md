@@ -4,7 +4,6 @@
 	Bernoulli
 	Binomial
 	Geometric
-	Uniform
 	Poisson
 	
 ### 2- Continuous:
