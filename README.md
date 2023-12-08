@@ -1,5 +1,5 @@
 # Probability Distributions
-## This project demonstrate Two main distributions
+## This project demonstrates Two main categories of distributions
 
 ------------------------------------------------------------------------------------
 ### 1- Discrete: 
