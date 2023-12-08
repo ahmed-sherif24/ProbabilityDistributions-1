@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b6e812-f2db-4c78-b104-3688fe4f60a1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Continuous/.idea/SourceCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Continuous/.idea/SourceCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Continuous/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Continuous/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Continuous/.idea/SourceCode.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Continuous/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Continuous/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Continuous/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Continuous/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Continuous/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Continuous/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Continuous/Exponential.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Continuous/Exponential.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binomial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Binomial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ExampleTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/ExampleTwo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Geometric.py" beforeDir="false" afterPath="$PROJECT_DIR$/Geometric.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,28 +30,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Bernoulli.executor": "Run",
-    "Python.Binomial.executor": "Run",
-    "Python.ExampleTwo.executor": "Run",
-    "Python.Geometric.executor": "Run",
-    "Python.Poisson.executor": "Run",
-    "Python.plot.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.debugger.dataview.autoresize": "false",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Bernoulli.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Binomial.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ExampleTwo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Geometric.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Poisson.executor&quot;: &quot;Run&quot;,
+    &quot;Python.plot.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.debugger.dataview.autoresize&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,11 +81,23 @@
       <workItem from="1701553430115" duration="17000" />
       <workItem from="1702048693818" duration="38000" />
       <workItem from="1702048786006" duration="693000" />
+      <workItem from="1702051216287" duration="302000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -97,11 +108,11 @@
     <SUITE FILE_PATH="coverage/Discrete$Poisson.coverage" NAME="Poisson Coverage Results" MODIFIED="1702049465872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SourceCode$Plot.coverage" NAME="Plot Coverage Results" MODIFIED="1700979890985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SourceCode$Bernoulli.coverage" NAME="Bernoulli Coverage Results" MODIFIED="1700981145764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Discrete$ExampleTwo.coverage" NAME="ExampleTwo Coverage Results" MODIFIED="1702049413973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Discrete$ExampleTwo.coverage" NAME="ExampleTwo Coverage Results" MODIFIED="1702051445790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SourceCode$ExampleOne.coverage" NAME="ExampleOne Coverage Results" MODIFIED="1700978764478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SourceCode$Poisson.coverage" NAME="Poisson Coverage Results" MODIFIED="1701005524801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Discrete$Binomial.coverage" NAME="Binomial Coverage Results" MODIFIED="1702048991450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Discrete$Bernoulli.coverage" NAME="Bernoulli Coverage Results" MODIFIED="1702048815752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Discrete$Binomial.coverage" NAME="Binomial Coverage Results" MODIFIED="1702051257892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Discrete$Geometric.coverage" NAME="Geometric Coverage Results" MODIFIED="1702049447173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Discrete$Bernoulli.coverage" NAME="Bernoulli Coverage Results" MODIFIED="1702051223077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

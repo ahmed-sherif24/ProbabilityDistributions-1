@@ -1,24 +1,22 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import time
-from plot import plotting
 from scipy.stats import binom
 
 
 def print_pause(message):
     print(message)
     time.sleep(2)
-<<<<<<< HEAD
 
 
 def binomial_drv():
     # Set the parameters
     n_binomial = 10    # Number of trials
-=======
-def binomial_drv ():
-# Set the parameters
+
+
+def binomial_drv():
+    # Set the parameters
     n_binomial = 25   # Number of trials
->>>>>>> dc79e9724b011e2adfeee36fca29ba452f4819e5
     p_binomial = 0.25     # Probability of success
     print("A multiple choice exam consist of 10 questions each with 4 choice ")
     print_pause(" what is the probability that you correctly answered at most 7 questions ?")
@@ -43,7 +41,6 @@ def binomial_drv ():
     variance_binomial = binom.var(n=n_binomial, p=p_binomial)
 
     # Display mean and variance
-<<<<<<< HEAD
     print_pause(f"The MEAN value = {mean_binomial}")
     print_pause(f"The VARIANCE value = {variance_binomial}")
     cdf = binom.cdf(7, n=n_binomial, p=p_binomial)
@@ -51,20 +48,17 @@ def binomial_drv ():
     print_pause("We must calculate the CDF of 7 ")
     print_pause(f"the CDF OF = {cdf}")
     time.sleep(4)
-=======
     print_pause(f"The MEAN value   {mean_binomial}")
     print_pause(f"The VARIANCE value =  {variance_binomial}")
     cdf = binom.cdf(22, n=n_binomial, p=p_binomial)
-    print_pause("To calculate the probabilty that you correctly answered at most 7 questions")
+    print_pause("To calculate the probability that you correctly answered at most 7 questions")
     print_pause("We must calculate the CDF of 7 ")
     print_pause(f"the CDF OF 7 = {cdf}")
     
-    #time.sleep(4)
+    time.sleep(4)
     
->>>>>>> dc79e9724b011e2adfeee36fca29ba452f4819e5
     print_pause("Now lets get this value from the CDf diagram : ")
     # Plot PMF and CDF
-<<<<<<< HEAD
     time.sleep(3)
     show_x = int(input("show ?"))
     if show_x == 1:
@@ -74,22 +68,17 @@ def binomial_drv ():
         plt.title('Binomial Distribution PMF')
         plt.xlabel('k')
         plt.ylabel('Probability')
+        time.sleep(3)
+        show_x = int(input("show ?"))
 
-=======
-    
-    #time.sleep(3)
-    
-    
-    showx =int(input("show ?"))
-    if showx ==1:
+    if show_x == 1:
        
         plt.figure(figsize=(12, 6))
         
         plt.subplot(121)
-        plt.plot(k_values, pmf_values, "bo", ms=8, label="dddddd")
+        plt.plot(k_values, pmf_values, "bo", ms=8, label="plotting")
         plt.vlines(k_values, 0, pmf_values, colors="b", lw=5, alpha=0.5)
     
->>>>>>> dc79e9724b011e2adfeee36fca29ba452f4819e5
         plt.subplot(122)
         plt.step(k_values, cdf_values, where='post')
         plt.title('Binomial Distribution CDF')

@@ -1,10 +1,6 @@
 from scipy.stats import expon
 import numpy as np
 from plot import plotting
-<<<<<<< HEAD
-=======
-#import matplotlib.pyplot as plt
->>>>>>> dc79e9724b011e2adfeee36fca29ba452f4819e5
 
 # Generate random numbers from exponential distribution
 scale = 2.0  # The scale parameter (mean = 1 / scale)
@@ -38,8 +34,4 @@ pdf = expon.pdf(x, scale=scale)  # PDF values
 cdf = expon.cdf(x, scale=scale)  # CDF values
 
 plotting('Exponential Distribution (PDF)', x, pdf)
-<<<<<<< HEAD
 plotting('Exponential Distribution (CDF)', x, cdf)
-=======
-plotting('Exponential Distribution (CDF)', x,cdf)
->>>>>>> dc79e9724b011e2adfeee36fca29ba452f4819e5
