@@ -5,7 +5,7 @@ n = 6
 p = 0.6
 r_values = np.arange(n + 1)
 
-dist = np.binom(n, p).pmf(r_values)
+dist = np.random.binomial(n, p)
 
 print("r\tp(r)")
 for r, prob in zip(r_values, dist):
