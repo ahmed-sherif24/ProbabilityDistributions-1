@@ -1,5 +1,7 @@
+from scipy.stats import expon
 import numpy as np
-from scipy.stats import expon, stats
+from plot import plotting
+#import matplotlib.pyplot as plt
 
 # Generate random numbers from exponential distribution
 scale = 2.0  # The scale parameter (mean = 1 / scale)
@@ -18,12 +20,19 @@ print("Standard Deviation:", standard_deviation)
 print("Median:", median)
 
 # Calculate CDF at a given value
-x_cdf = 3.0
-cdf = expon.cdf(x_cdf, scale=scale)
-print("CDF at", x_cdf, ":", cdf)
+x = 3.0
+cdf = expon.cdf(x, scale=scale)
+print("CDF at", x, ":", cdf)
 
 # Calculate quantile at a given probability
 p = 0.75
 quantile = expon.ppf(p, scale=scale)
 print("Quantile at", p, ":", quantile)
 
+# Plot the PDF and CDF
+x = np.linspace(0, 10, 1000)  # Values of x for plotting
+pdf = expon.pdf(x, scale=scale)  # PDF values
+cdf = expon.cdf(x, scale=scale)  # CDF values
+
+plotting('Exponential Distribution (PDF)', x, pdf)
+plotting('Exponential Distribution (CDF)', x,cdf)
