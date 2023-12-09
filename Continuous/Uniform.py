@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import uniform
 
 
-lower_bound = 0  
+lower_bound = 0
 upper_bound = 1
 rv = uniform(loc=lower_bound, scale=upper_bound - lower_bound)
 random_var = rv.rvs(size=1000)
