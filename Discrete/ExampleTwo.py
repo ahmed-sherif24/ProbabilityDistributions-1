@@ -9,14 +9,12 @@ def print_pause(message):
     time.sleep(2)
 
 
-def binomial_drv():
-    # Set the parameters
-    n_binomial = 10    # Number of trials
+
 
 
 def binomial_drv():
     # Set the parameters
-    n_binomial = 25   # Number of trials
+    n_binomial = 10   # Number of trials
     p_binomial = 0.25     # Probability of success
     print("A multiple choice exam consist of 10 questions each with 4 choice ")
     print_pause(" what is the probability that you correctly answered at most 7 questions ?")
@@ -48,29 +46,12 @@ def binomial_drv():
     print_pause("We must calculate the CDF of 7 ")
     print_pause(f"the CDF OF = {cdf}")
     time.sleep(4)
-    print_pause(f"The MEAN value   {mean_binomial}")
-    print_pause(f"The VARIANCE value =  {variance_binomial}")
-    cdf = binom.cdf(22, n=n_binomial, p=p_binomial)
-    print_pause("To calculate the probability that you correctly answered at most 7 questions")
-    print_pause("We must calculate the CDF of 7 ")
-    print_pause(f"the CDF OF 7 = {cdf}")
-    
-    time.sleep(4)
+   
     
     print_pause("Now lets get this value from the CDf diagram : ")
     # Plot PMF and CDF
     time.sleep(3)
-    show_x = int(input("show ?"))
-    if show_x == 1:
-        plt.figure(figsize=(12, 6))
-        plt.subplot(121)
-        plt.bar(k_values, pmf_values, align='center', alpha=0.75, color='red')
-        plt.title('Binomial Distribution PMF')
-        plt.xlabel('k')
-        plt.ylabel('Probability')
-        time.sleep(3)
-        show_x = int(input("show ?"))
-
+    show_x = int(input("show?"))
     if show_x == 1:
        
         plt.figure(figsize=(12, 6))
