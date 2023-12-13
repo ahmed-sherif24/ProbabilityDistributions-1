@@ -12,8 +12,8 @@
 				
 	Poisson  	: Yasmin Yehya
 				
-	Uniform	 	:
-				
+	Uniform	 	: Ahmed Sherif	
+
 				
 	Example 1	: Mariam Abdellatif
 				
