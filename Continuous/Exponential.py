@@ -33,5 +33,5 @@ x = np.linspace(0, 10, 1000)  # Values of x for plotting
 pdf = expon.pdf(x, scale=scale)  # PDF values
 cdf = expon.cdf(x, scale=scale)  # CDF values
 
-plotting('Exponential Distribution (PDF)', x, pdf)
-plotting('Exponential Distribution (CDF)', x, cdf)
+plotting(dis_type="Exponential", title="PDF", x_axis=x, y_axis=pdf)
+plotting(dis_type="Exponential", title="CDF", x_axis=x, y_axis=cdf)
