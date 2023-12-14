@@ -30,8 +30,8 @@ print("Quantile at", p, ":", quantile)
 
 # Plot the PDF and CDF
 x = np.linspace(0, 10, 1000)  # Values of x for plotting
-pdf = expon.pdf(x, scale=scale)  # PDF values
-cdf = expon.cdf(x, scale=scale)  # CDF values
+f = expon.pdf(x, scale=scale)  # PDF values
+F = expon.cdf(x, scale=scale)  # CDF values
 
-plotting(dis_type="Exponential", title="PDF", x_axis=x, y_axis=pdf)
-plotting(dis_type="Exponential", title="CDF", x_axis=x, y_axis=cdf)
+plotting(dis_type="Exponential", title="PDF", x_axis=x, y_axis=f)
+plotting(dis_type="Exponential", title="CDF", x_axis=x, y_axis=F)
