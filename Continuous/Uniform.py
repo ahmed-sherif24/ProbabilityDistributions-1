@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import uniform
-from plot import plotting
+from plot import plot_pdf, plot_cdf
 
 
 lower_bound = 0
@@ -20,5 +20,5 @@ print('Mean:', mean)
 print('Variance:', variance)
 
 
-plotting(dis_type="Uniform", title="PDF", x_axis=x, y_axis=f)
-plotting(dis_type="Uniform", title="CDF", x_axis=x, y_axis=F)
+plot_pdf(dis_type="Uniform", title="PDF", x_axis=x, y_axis=f)
+plot_cdf(dis_type="Uniform", title="CDF", x_axis=x, y_axis=F)

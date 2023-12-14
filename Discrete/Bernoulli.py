@@ -1,6 +1,6 @@
 import numpy as np
 import scipy.stats as stats
-from plot import plotting
+from plot import plot_pmf, plot_cdf
 
 p = 0.3
 rv = stats.bernoulli(p)
@@ -11,5 +11,5 @@ F = rv.cdf(x)
 mean, var = rv.stats(moments="mv")
 print(f"mean: {mean}\nVariance: {var}")
 
-plotting(dis_type="Bernoulli", title='PMF', x_axis=x, y_axis=f)
-plotting(dis_type="Bernoulli", title='CDF', x_axis=x, y_axis=F)
+plot_pmf(dis_type="Bernoulli", title='PMF', x_axis=x, y_axis=f)
+plot_cdf(dis_type="Bernoulli", title='CDF', x_axis=x, y_axis=F)

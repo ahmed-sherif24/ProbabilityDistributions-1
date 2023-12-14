@@ -1,6 +1,6 @@
 from scipy.stats import expon
 import numpy as np
-from plot import plotting
+from plot import plot_pdf, plot_cdf
 
 # Generate random numbers from exponential distribution
 scale = 2.0  # The scale parameter (mean = 1 / scale)
@@ -33,5 +33,5 @@ x = np.linspace(0, 10, 1000)  # Values of x for plotting
 f = expon.pdf(x, scale=scale)  # PDF values
 F = expon.cdf(x, scale=scale)  # CDF values
 
-plotting(dis_type="Exponential", title="PDF", x_axis=x, y_axis=f)
-plotting(dis_type="Exponential", title="CDF", x_axis=x, y_axis=F)
+plot_pdf(dis_type="Exponential", title="PDF", x_axis=x, y_axis=f)
+plot_cdf(dis_type="Exponential", title="CDF", x_axis=x, y_axis=F)
