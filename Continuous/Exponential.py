@@ -1,11 +1,10 @@
 from scipy.stats import expon
 import numpy as np
 from plot import plotting
-#import matplotlib.pyplot as plt
 
-# Generate random numbers from exponential distribution
-scale = 2.0  # The scale parameter (mean = 1 / scale)
-size = 1000  # Number of random numbers to generate
+
+scale = 2.0
+size = 1000
 random_numbers = expon.rvs(scale=scale, size=size)
 
 # Calculate statistics
@@ -30,9 +29,10 @@ quantile = expon.ppf(p, scale=scale)
 print("Quantile at", p, ":", quantile)
 
 # Plot the PDF and CDF
-x = np.linspace(0, 10, 1000)  # Values of x for plotting
-pdf = expon.pdf(x, scale=scale)  # PDF values
-cdf = expon.cdf(x, scale=scale)  # CDF values
 
-plotting('Exponential Distribution (PDF)', x, pdf)
-plotting('Exponential Distribution (CDF)', x,cdf)
+x = np.linspace(0, 10, 1000)  # Values of x for plotting
+f = expon.pdf(x, scale=scale)  # PDF values
+F = expon.cdf(x, scale=scale)  # CDF values
+
+plotting(title="CDF", x_axis=x, y_axis=F)
+plotting(title="PDF", x_axis=x, y_axis=f)
