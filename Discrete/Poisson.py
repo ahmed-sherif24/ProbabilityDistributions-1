@@ -11,4 +11,6 @@ pmf = np.round(pmf, 5)
 for val, prob in zip(k, pmf):
     print(f"k-value {val} has probability = {prob}")
 
-plotting(title='Probability Mass Function', x_axis=k, y_axis=pmf)
+
+plotting(dis_type="Poisson", title='PDF', x_axis=x, y_axis=f)
+plotting(dis_type="Poisson", title='CDF', x_axis=x, y_axis=F)
