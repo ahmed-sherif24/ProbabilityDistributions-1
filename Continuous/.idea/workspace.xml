@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca49bb8b-98f7-466b-b4ab-550a84339e72" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Bernoulli.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Continuous.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Continuous.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gaussian.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gaussian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Theoretical/Discrete/Bernoulli.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +87,7 @@
       <workItem from="1702096882782" duration="319000" />
       <workItem from="1702097650223" duration="763000" />
       <workItem from="1702550218643" duration="12000" />
-      <workItem from="1702550423508" duration="448000" />
+      <workItem from="1702550423508" duration="1043000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import uniform
+from plot import plotting
 
 
 lower_bound = 0
@@ -17,13 +18,7 @@ mean = rv.mean()
 variance = rv.var()
 print('Mean:', mean)
 print('Variance:', variance)
-plt.plot(x, pdf)
-plt.title('Probability Density Function (PDF)')
-plt.xlabel('x')
-plt.ylabel('Probability Density')
-plt.show()
-plt.plot(x, cdf)
-plt.title('Cumulative Distribution Function (CDF)')
-plt.xlabel('x')
-plt.ylabel('Cumulative Probability')
-plt.show()
+
+
+plotting(dis_type="Uniform", title="PDF", x_axis=x, y_axis=pdf)
+plotting(dis_type="Uniform", title="CDF", x_axis=x, y_axis=cdf)
