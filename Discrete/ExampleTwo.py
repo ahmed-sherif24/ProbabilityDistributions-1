@@ -1,77 +1,51 @@
+from scipy.stats import poisson
 import numpy as np
-import matplotlib.pyplot as plt
-import time
-from scipy.stats import binom
+
+# Function to calculate the average goals based on goals scored and matches played this season
+def calculate_average_goals(goals_scored, matches_played):
+    return goals_scored / matches_played if matches_played > 0 else 0
+
+# Function to calculate the Poisson probability for a given lambda and number of goals
+def poisson_probability(lmbda, k):
+    return poisson.pmf(k, lmbda)
+
+# Function to predict match outcomes based on average goals this season
+def predict_match_outcome(average_goals_scored_home, average_goals_scored_away, average_goals_conceded_home, average_goals_conceded_away):
+    goals_range = np.arange(10)  # Adjust as needed
+
+    # Calculate Poisson probabilities for different goal combinations
+    prob_home_win = sum(poisson_probability(average_goals_scored_home, i) * poisson_probability(average_goals_conceded_away, j) for i in goals_range for j in goals_range if i > j)
+    prob_away_win = sum(poisson_probability(average_goals_scored_away, i) * poisson_probability(average_goals_conceded_home, j) for i in goals_range for j in goals_range if i < j)
+    prob_draw = sum(poisson_probability(average_goals_scored_home, i) * poisson_probability(average_goals_conceded_away, j) for i in goals_range for j in goals_range if i == j)
+
+    # Print probabilities
+    print("Probability of Home Win: {:.2%}".format(prob_home_win))
+    print("Probability of Away Win: {:.2%}".format(prob_away_win))
+    print("Probability of Draw: {:.2%}".format(prob_draw))
+
+    # Determine the result
+    if prob_home_win > prob_away_win and prob_home_win > prob_draw:
+        print("Predicted Result: Home Win")
+    elif prob_away_win > prob_home_win and prob_away_win > prob_draw:
+        print("Predicted Result: Away Win")
+    else:
+        print("Predicted Result: Draw")
+
+# Hypothetical data for illustration purposes
+goals_scored_home_team_season = int (input("Enter goals scored home team season"))
+matches_played_home_team_season = matches_played_away_team_season = int (input("Enter matches played this season "))
+goals_scored_away_team_season = int (input("Enter goals scored away team season"))
 
 
-def print_pause(message):
-    print(message)
-    time.sleep(2)
+goals_conceded_home_team_season = int (input("Enter goals conceded home team season"))
+goals_conceded_away_team_season = int (input("Enter goals conceded away team season"))
 
+# Calculate average goals for the home and away teams
+average_goals_scored_home_team = calculate_average_goals(goals_scored_home_team_season, matches_played_home_team_season)
+average_goals_scored_away_team = calculate_average_goals(goals_scored_away_team_season, matches_played_away_team_season)
 
+average_goals_conceded_home_team = calculate_average_goals(goals_conceded_home_team_season, matches_played_home_team_season)
+average_goals_conceded_away_team = calculate_average_goals(goals_conceded_away_team_season, matches_played_away_team_season)
 
-
-
-def binomial_drv():
-    # Set the parameters
-    n_binomial = 10   # Number of trials
-    p_binomial = 0.25     # Probability of success
-    print("A multiple choice exam consist of 10 questions each with 4 choice ")
-    print_pause(" what is the probability that you correctly answered at most 7 questions ?")
-    print_pause("So we can considered that the best random variable to solve it is the Binomial random variable")
-    print_pause("Because in this case we have only two conditions correct answer or not ")
-    print_pause("The probability of success is 0.25 ")
-    print_pause("The number of trials is 10 ")
-    # Calculate mean and variance
-    mean_binomial = binom.mean(n=n_binomial, p=p_binomial)
-    variance_binomial = binom.var(n=n_binomial, p=p_binomial)
-
-    # Generate binomial random variable
-    binomial_rvs = binom.rvs(n=n_binomial, p=p_binomial, size=1000)
-
-    # Calculate PMF and CDF
-    k_values = np.arange(0, n_binomial + 1)
-    pmf_values = binom.pmf(k_values, n=n_binomial, p=p_binomial)
-    cdf_values = binom.cdf(k_values, n=n_binomial, p=p_binomial)
-
-    # Calculate mean and variance
-    mean_binomial = binom.mean(n=n_binomial, p=p_binomial)
-    variance_binomial = binom.var(n=n_binomial, p=p_binomial)
-
-    # Display mean and variance
-    print_pause(f"The MEAN value = {mean_binomial}")
-    print_pause(f"The VARIANCE value = {variance_binomial}")
-    cdf = binom.cdf(7, n=n_binomial, p=p_binomial)
-    print_pause("To calculate the probability that you correctly answered at most 7 questions")
-    print_pause("We must calculate the CDF of 7 ")
-    print_pause(f"the CDF OF = {cdf}")
-    time.sleep(4)
-   
-    
-    print_pause("Now lets get this value from the CDf diagram : ")
-    # Plot PMF and CDF
-    time.sleep(3)
-    show_x = int(input("show?"))
-    if show_x == 1:
-       
-        plt.figure(figsize=(12, 6))
-        
-        plt.subplot(121)
-        plt.plot(k_values, pmf_values, "bo", ms=8, label="plotting")
-        plt.vlines(k_values, 0, pmf_values, colors="b", lw=5, alpha=0.5)
-    
-        plt.subplot(122)
-        plt.step(k_values, cdf_values, where='post')
-        plt.title('Binomial Distribution CDF')
-        plt.xlabel('k')
-        plt.ylabel('Probability')
-        plt.tight_layout()
-        plt.show()
-
-
-print("Choose the number of Example that you want : ")
-print("1- Binomial random variable ")
-print("2- Geometric random variable ")
-choose = int(input("Choose: "))
-if choose == 1:
-    binomial_drv()
+# Make predictions based on the average goals this season
+predict_match_outcome(average_goals_scored_home_team, average_goals_scored_away_team, average_goals_conceded_home_team, average_goals_conceded_away_team)
