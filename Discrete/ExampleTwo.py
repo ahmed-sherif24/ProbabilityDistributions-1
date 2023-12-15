@@ -9,7 +9,7 @@ def calculate_average_goals(goals_scored, matches_played):
 def poisson_probability(lmbda, k):
     return poisson.pmf(k, lmbda)
 
-# Function to predict match outcomes based on average goals this season
+# Function to predict match outcomes and number of goals based on average goals this season
 def predict_match_outcome(average_goals_scored_home, average_goals_scored_away, average_goals_conceded_home, average_goals_conceded_away):
     goals_range = np.arange(10)  # Adjust as needed
 
@@ -18,7 +18,7 @@ def predict_match_outcome(average_goals_scored_home, average_goals_scored_away, 
     prob_away_win = sum(poisson_probability(average_goals_scored_away, i) * poisson_probability(average_goals_conceded_home, j) for i in goals_range for j in goals_range if i < j)
     prob_draw = sum(poisson_probability(average_goals_scored_home, i) * poisson_probability(average_goals_conceded_away, j) for i in goals_range for j in goals_range if i == j)
 
-    # Print probabilities
+    # Print probabilities for match outcomes
     print("Probability of Home Win: {:.2%}".format(prob_home_win))
     print("Probability of Away Win: {:.2%}".format(prob_away_win))
     print("Probability of Draw: {:.2%}".format(prob_draw))
@@ -31,6 +31,13 @@ def predict_match_outcome(average_goals_scored_home, average_goals_scored_away, 
     else:
         print("Predicted Result: Draw")
 
+    # Predict number of goals
+    predicted_goals_home = np.argmax([poisson_probability(average_goals_scored_home, k) for k in goals_range])
+    predicted_goals_away = np.argmax([poisson_probability(average_goals_scored_away, k) for k in goals_range])
+
+    print(f"Predicted Number of Goals for Home Team: {predicted_goals_home}")
+    print(f"Predicted Number of Goals for Away Team: {predicted_goals_away}")
+
 # Hypothetical data for illustration purposes
 goals_scored_home_team_season = int (input("Enter goals scored home team season"))
 matches_played_home_team_season = matches_played_away_team_season = int (input("Enter matches played this season "))
@@ -39,7 +46,6 @@ goals_scored_away_team_season = int (input("Enter goals scored away team season"
 
 goals_conceded_home_team_season = int (input("Enter goals conceded home team season"))
 goals_conceded_away_team_season = int (input("Enter goals conceded away team season"))
-
 # Calculate average goals for the home and away teams
 average_goals_scored_home_team = calculate_average_goals(goals_scored_home_team_season, matches_played_home_team_season)
 average_goals_scored_away_team = calculate_average_goals(goals_scored_away_team_season, matches_played_away_team_season)
